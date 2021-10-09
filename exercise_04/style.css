@@ -1,0 +1,60 @@
+html{
+    font-family: 'Roboto', sans-serif;  
+  }
+  
+  .left{float:left;}
+  .right{float:right;
+  font-style:italic;}
+
+  .head {
+    background-color:black;
+    color:white;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    padding:0px;
+  width: 100%;
+  height:50px;
+  font-size: 30px;
+  font-style:sans-serif;
+  position:fixed;
+  top:0px;
+  }
+  
+  .cover{position:relative;
+    top:-140px;
+    margin:0px;
+    border:100px;
+    width:100%;
+    height:100%;
+    padding:px 30px;
+    background-color:black;
+    color:white;
+    align-items: stretch;
+  }
+
+  h1{background-color:black;
+    position:relative;
+    font-size:200px;
+    font-weight:bold; 
+  }
+  
+  h2{font-size:70px;
+font-style:italic;
+font-style:sns-serif;
+text-align: right;}
+
+.major{float:left;
+    padding: 20px;
+    line-height: 150%;
+}
+
+.English{float:left;
+width:50%;
+margin-right:30px;
+}
+
+.Portuguese{
+font-style: italic;
+color:darkgrey;    
+}
