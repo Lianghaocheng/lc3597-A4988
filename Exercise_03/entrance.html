@@ -6,30 +6,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <style>a:hover {color:black;}</style>
+    <style>a:hover {color:tomato;text-decoration:underline;;}</style>
 </head>
 <body>
-    <header>
-        <div class="navbar">
-            <a href="entrance.html" class="nav">Home</a>
-            <a href="entrance.html" class="nav">Introduction</a>
-            <a href="entrance.html" class="nav">Tickets & Vist</a>
-            <a href="entrance.html" class="nav">About</a>
-        </div>
-    </header>
+  <ul class="navbar" id="navbar">
+    <li><a class="home" href="entrance.html">Home</a></li>
+    <li data-toggle-id="intro1" >Introduction
+     <ul id="intro1" hidden>
+        <li>Mural</li>
+        <li>Sculpture</li>
+        <li>Caligraphy</li>
+        <li>Architecture</li>
+     </ul>
+    </li>
+
+    <li data-toggle-id="intro2">Tickets & Vist
+     <ul id="intro2" hidden>
+        <li>Tickets</li>
+        <li>Address</li>
+        <li>Arrival Info</li>
+    </li>
+     </ul>
+    <li data-toggle-id="intro3">About
+     <ul id="intro3" hidden>
+        <li>Author</li>
+        <li>Contacts</li>
+      </li>
+    
+     
+    
+     </ul>
+   
+</ul>
+    
+        
+    
+        
+    
+        
+    
+    
+    
+    
+    
+       
+    </div>   
+    
   
     <div class="major">
      <div class="text">
-     <h1 class="title">敦煌 DunHuang</h1>
-     <h2 class="subtitle">Situated at a strategic point along the Silk Route, at the crossroads of trade as well as religious, cultural and intellectual influences, the 492 cells and cave sanctuaries in Mogao are famous for their statues and wall paintings, spanning 1,000 years of Buddhist art.</h2>
-     <a href="introduction/index.html" class="ent">→History of Dunhuang Culture</a>
-     <a href="gallary/index.html" class="ent">→Gallary of Dunhuang Mural</a>
+     <h1 class="title">敦煌</h1>
+          <h2 class="subtitle">DUN-HUANG:   Situated at a strategic point along the Silk Route, at the crossroads of trade as well as religious, cultural and intellectual influences, the 492 cells and cave sanctuaries in Mogao are famous for their statues and wall paintings, spanning 1,000 years of Buddhist art.</h2>
+     <a href="introduction/index.html" class="ent">→  History of Dunhuang Culture</a>
+     <a href="gallary/index3.html" class="ent">→  Gallary of Dunhuang Mural</a>
       </div>
     
      <img class="picture" src="coverpic.jpeg" alt="aaa">
      </div>
  </main>
+ 
+ <script>
+   navbar.addEventListener('mouseover', function(event) {
+    let id = event.target.dataset.toggleId;
+    if (!id) return;
 
+    let elem = document.getElementById(id);
+        elem.hidden = !elem.hidden;
+  });
+
+  navbar.addEventListener('mouseout', function(event) {
+    let id = event.target.dataset.toggleId;
+    if (!id) return;
+
+    let elem = document.getElementById(id);
+        elem.hidden = !elem.hidden;
+  </script>
 
 </body>
 </html>

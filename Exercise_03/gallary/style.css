@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+.header{
+display: flex;
+justify-content: space-between;
+background-color: rgb(47,9,9);
+align-items: baseline;
+font-family: "Roboto", sans-serif;
+ line-height: 1.5em;
+ color: white;
+
+}
+.home{
+  text-decoration: none;
+  color:white;}
+
+.Author{
+        line-height: 3em;
+    font-style: italic;
+    position: relative;
+    
+    right:10%;
+    
+    padding: 0.5%;
+}
+
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(47,9,9);
+    
+ display: flex;
+ flex-wrap: nowrap;
+ justify-content: space-around;
+ position: relative;
+ top:0%;
+ left: 0%;
+ text-decoration: none;
+ width: 50vw;
+ 
+ padding:1%;
+ list-style: none;
+ }
+
+ #intro1{
+    list-style-position: outside;
+ }
+
+ 
+
+     #largeImg{margin:0 auto;
+    position: relative;
+    top:10vh;
+    text-align: center;
+                 margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 800px;
+        
+
+     }
+
+    
+
+     #thumbs{
+         
+         
+         display: flex;
+         justify-content: center;
+        margin:20px;
+        position: relative;
+        top:80vh; 
+        list-style: none;
+        
+        
+     }
+ 
+     .smallPic{
+height: 50px;
+margin:5px;
+     }
+
+     .smallPic:hover {
+        border: 5px solid tomato;
+      }

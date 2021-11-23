@@ -9,29 +9,66 @@
     <style>a:hover {color:black;}</style>
 </head>
 <body>
-    <header>
-            <div class="navbar"><a href="index.html" class="nav">Home</a>
-            <a href="entrance.html" class="nav">Introduction</a>
-            <a href="entrance.html" class="nav">Tickets & Vist</a>
-            <a href="entrance.html" class="nav">About</a>
-        </div>
-              
-            </header>
+    <div class="header">
+    
+        <ul class="navbar" id="navbar">
+            <li><a class="home" href="../entrance.html">Home</a></li>
+            <li data-toggle-id="intro1" >Introduction
+             <ul id="intro1" hidden>
+                <li>Mural</li>
+                <li>Sculpture</li>
+                <li>Caligraphy</li>
+                <li>Architecture</li>
+             </ul>
+            </li>
+    
+            <li data-toggle-id="intro2">Tickets & Vist
+             <ul id="intro2" hidden>
+                <li>Tickets</li>
+                <li>Address</li>
+                <li>Arrival Info</li>
+            </li>
+             </ul>
+            <li data-toggle-id="intro3">About
+             <ul id="intro3" hidden>
+                <li>Author</li>
+                <li>Contacts</li>
+              </li>
+            
+             
+            
+             </ul>
+           
+        </ul>
+    
+        <p class="Author" onclick="myFunction()">Lianghao-Cheng</p> 
+    
+        
+    
+        
+    
+    
+    
+    
+    
+       
+    </div>   
+    
     
     <div class="mp">
     <ul class="title">
-    <h1>A brief introduction of Dunhuang Culture and Mogao Caves</h1>
-    <h2>Carved into the cliffs above the Dachuan River, the Mogao Caves south-east of 
-        the Dunhuang oasis, Gansu Province, comprise the largest, most richly endowed, and longest used treasure house of Buddhist art in the world.</h2>
+    <p class="c1">Dunhuang Culture and Mogao Caves</p>
+    <p class="c2">Carved into the cliffs above the Dachuan River, the Mogao Caves south-east of 
+        the Dunhuang oasis, Gansu Province, comprise the largest, most richly endowed, and longest used treasure house of Buddhist art in the world.</p>
     </ul>
     <ul><img class="pic1" src="intro.jpg" alt="aaa"></ul>
     </div>
 
     <div class="mb">
     <p>The Mogao Caves, also known as the Thousand Buddha Grottoes or Caves of the Thousand 
-        Buddhas, form a system of 500 temples[1] 25 km (16 mi) southeast of the center of Dunhuang, an oasis located at a religious and cultural crossroads on the Silk Road, in Gansu 
+        Buddhas, form a system of 500 temples[1] 25 km (16 mi) southeast of the center of Dun'huang, an oasis located at a religious and cultural crossroads on the Silk Road, in Gansu 
         province, China. The caves may also be known as the Dunhuang Caves; however, this term 
-        is also used as a collective term to include other Buddhist cave sites in and around the Dunhuang area, such as the Western Thousand Buddha Caves, Eastern Thousand Buddha 
+        is also used as a collective term to include other Buddhist cave sites in and around the Dun'huang area, such as the Western Thousand Buddha Caves, Eastern Thousand Buddha 
         Caves, Yulin Caves, and Five Temple Caves. The caves contain some of the finest examples 
         of Buddhist art spanning a period of 1,000 years.[2] The first caves were dug out in AD 366 as 
         places of Buddhist meditation and worship.[2][3] The Mogao Caves are the best known of the 
@@ -45,7 +82,7 @@
     now a popular tourist destination, with a number open for visiting.[4]</p>
     <img class="pic2" src="pic1.jpg" alt="aaa">
     <p>Dunhuang was established as a frontier garrison outpost by the Han Dynasty Emperor Wudi to protect 
-        against the Xiongnu in 111 BC. It also became an important gateway to the West, a centre of commerce along the Silk Road, as well as a meeting place of various people and religions such as Buddhism.</p>
+        against the Xiongnu in 111 BC. It also became an important gateway to the West, a centre of commerce along the Silk Road, as well as a meeting place of various people and religions such as Buddhism.</p>
 <p>The construction of the Mogao Caves near Dunhuang is generally taken to have begun sometime in 
     the fourth century AD. According to a book written during the reign of Tang Empress Wu, Fokan Ji (佛龕
     記, An Account of Buddhist Shrines) by Li Junxiu (李君修), a Buddhist monk named Lè Zūn (樂尊, 
@@ -78,10 +115,10 @@
         including the two large statues of Buddha at the 
         site, the largest one constructed in 695 following 
         an edict a year earlier by Tang Empress Wu 
-        Zetian to build giant statues across the country.[18] The site escaped the persecution of Buddhists ordered by Emperor Wuzong in 845 as it 
+        Zetian to build giant statues across the country.[18] The site escaped the persecution of Buddhists ordered by Emperor Wuzong in 845 as it 
         was then under Tibetan control. As a frontier town, 
         Dunhuang had been occupied at various times by 
-        other non-Han Chinese people. After the Tang Dynasty, the site went into a gradual decline, and 
+        other non-Han Chinese people. After the Tang Dynasty, the site went into a gradual decline, and 
         construction of new caves ceased entirely after 
         the Yuan Dynasty. By then Islam had conquered</p>
          </div>
@@ -95,7 +132,7 @@
             years to repair and copy the murals. He exhibited and published the copies of the murals in 1943, which 
             helped to publicize and give much prominence to the art of Dunhuang within China.[30] Historian Xiang 
             Da then persuaded Yu Youren, a prominent member of the Kuomintang (Chinese Nationalist Party), to 
-            set up an institution, the Research Institute of Dunhuang Art (which later became the Dunhuang Academy), at Mogao in 1944 to look after the site and its contents. In 1956, the first Premier of the People's 
+            set up an institution, the Research Institute of Dunhuang Art (which later became the Dunhuang Academy), at Mogao in 1944 to look after the site and its contents. In 1956, the first Premier of the People's 
             Republic of China, Zhou Enlai, took a personal interest in the caves and sanctioned a grant to repair and 
             protect the site; and in 1961, the Mogao Caves were declared to be a specially protected historical monument by the State Council, and large-scale renovation work at Mogao began soon afterwards. The site 
             escaped the widespread damage caused to many religious sites during the Cultural Revolution.[31]</p>
@@ -112,6 +149,26 @@ were discovered to the North of the 487 caves known since the early 1900s.[34]
             <ul>Exercise 03 for ARCH 4988</ul>
         </div>
 </div>
+<script>
+     function myFunction() {
+  alert("Hello! Glad to see you!\nI am Lianghao Cheng\nI'm M.S AUD stutent from GSAPP\nMy uni is lc3597\nThis is the Exercise_03 for ARCH 4988");
+}
+    navbar.addEventListener('mouseover', function(event) {
+      let id = event.target.dataset.toggleId;
+      if (!id) return;
+  
+      let elem = document.getElementById(id);
+          elem.hidden = !elem.hidden;
+    });
+  
+    navbar.addEventListener('mouseout', function(event) {
+      let id = event.target.dataset.toggleId;
+      if (!id) return;
+  
+      let elem = document.getElementById(id);
+          elem.hidden = !elem.hidden;
+    });
+</script>  
 
 </body>
 </html>

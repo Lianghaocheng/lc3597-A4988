@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+    
+    <ul class="navbar" id="navbar">
+        <li><a class="home" href="../entrance.html">Home</a></li>
+        <li data-toggle-id="intro1" >Introduction
+         <ul id="intro1" hidden>
+            <li class="listA">Mural</li>
+            <li>Sculpture</li>
+            <li>Caligraphy</li>
+            <li>Architecture</li>
+         </ul>
+        </li>
+
+        <li data-toggle-id="intro2">Tickets & Vist
+         <ul id="intro2" hidden>
+            <li>Tickets</li>
+            <li>Address</li>
+            <li>Arrival Info</li>
+        </li>
+         </ul>
+        <li data-toggle-id="intro3">About
+         <ul id="intro3" hidden>
+            <li>Author</li>
+            <li>Contacts</li>
+          </li>
+        
+         
+        
+         </ul>
+       
+    </ul>
+
+    <p class="Author" onclick="myFunction()">Lianghao-Cheng</p> 
+
+    
+
+    
+
+
+
+
+
+   
+</div>   
+
+
+
+
+    
+<p><img id="largeImg" src="pic1.jpg" alt="Large image"></p>
+    
+    
+    <ul id="thumbs">
+        <!-- the browser shows a small built-in tooltip on hover with the text from "title" attribute -->
+        <li>
+          <a href="pic1.jpg" title="Image 2"><img src="pic2.jfif" class="smallPic"></a>
+        </li>
+        <li>
+          <a href="pic2.jpg" title="Image 2"><img src="pic2.jpg" class="smallPic"></a>
+        </li>
+        <li>
+          <a href="pic3.jpg" title="Image 3"><img src="pic3.jpg" class="smallPic"></a>
+        </li>
+        <li>
+          <a href="pic4.jpg" title="Image 4"><img src="pic4.jpg"class="smallPic"></a>
+        </li>
+        <li>
+          <a href="pic5.jpg" title="Image 5"><img src="pic5.jpg" class="smallPic"></a>
+        </li>
+        
+      </ul>
+    
+  
+
+
+
+
+
+
+    
+
+ 
+
+
+
+
+<script>
+  function myFunction() {
+  alert("Hello! I am Lianghao Cheng\nI'm M.S AUD stutent from GSAPP\nMy uni is lc3597\nThis is the Exercise_03 for ARCH 4988");
+}
+
+
+  navbar.addEventListener('mouseover', function(event) {
+    let id = event.target.dataset.toggleId;
+    if (!id) return;
+
+    let elem = document.getElementById(id);
+        elem.hidden = !elem.hidden;
+  });
+
+  navbar.addEventListener('mouseout', function(event) {
+    let id = event.target.dataset.toggleId;
+    if (!id) return;
+
+    let elem = document.getElementById(id);
+        elem.hidden = !elem.hidden;
+  });
+
+
+
+
+
+  thumbs.onclick = function(event) {
+      let thumbnail = event.target.closest('a');
+
+      if (!thumbnail) return;
+      showThumbnail(thumbnail.href, thumbnail.title);
+      event.preventDefault();
+    }
+
+    function showThumbnail(href, title) {
+      largeImg.src = href;
+      largeImg.alt = title;
+    }
+
+
+
+
+
+  
+
+</script>
+</body>
+</html>

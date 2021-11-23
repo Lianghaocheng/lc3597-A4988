@@ -1,12 +1,15 @@
 *{
-    background-color: rgb(127,214,201);
+    background-color: rgb(47,9,9);
    }
 
    html,
    body {
      height: 100%;
    }
-
+.home{
+    text-decoration: none;
+    color:white;
+}
    .navbar{
     font-family: "Roboto", sans-serif;
     line-height: 1.5em;
@@ -17,13 +20,15 @@
     width: 40%;
     position: absolute;
     top:5%;
-    left: 3%;
+    left: 0%;
+    list-style:none;
+    text-decoration: none;
      }
 
     .nav{
     text-decoration: none;
     color: white;
-    padding-left: 10px;
+    padding-left: 5px;
     padding-right: 10px;}
     
      
@@ -37,8 +42,8 @@
 
        
     .text{
-        width:50%;
-        color: rgb(219,74,29);
+        width:40%;
+        color: white;
         display: flex;
         flex-direction:column;
         position: relative;
@@ -50,24 +55,28 @@
 
     .title{font-family:kaiti,cursive;
             font-size:12vh;
-            padding-bottom: 5vh;
+            padding-bottom: 3vh;
             margin:0%
     }   
 
     .subtitle{
+        font-family: "Gabriola";
         font-size: 3vh;
-        line-height:1em;
+        line-height:2em;
         font-style: italic;
+        font-weight: lighter;
     }
     
    .ent{
+    font-family: "Gabriola";
     font-size: 3vh;
     display: flex;
     flex-direction:column;
     margin: 2em,2em;
     text-decoration: none;
-    color: rgb(219,74,29);
+    color: white;
     line-height: 4vh;
+    
    }
    .picture{
     width: auto;
@@ -77,7 +86,5 @@
     padding-right: 5vw;
     }
    
-    
-   
-
+  
    
