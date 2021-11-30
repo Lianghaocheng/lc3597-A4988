@@ -1,0 +1,30 @@
+.num1{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: right;
+    margin-right: 5vw;
+
+}
+.major{
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(65, 65, 65);
+    text-align: center;
+    margin: 10 auto;
+    margin-top:30%;
+}
+
+a{
+    text-decoration: underline;
+    color: rgb(58, 58, 58);
+}
+
+.links{
+    padding-top: 1%;
+font-size: 1.2em;
+}
+
+
+a:hover{
+    color:tomato;
+    font-size: 150%;
+    font-weight: bold;
+}
