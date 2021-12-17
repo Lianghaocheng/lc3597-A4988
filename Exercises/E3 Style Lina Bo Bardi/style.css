@@ -1,0 +1,45 @@
+html{
+    font-family: 'Roboto', sans-serif;  
+  }
+
+.major{
+  
+  margin-left: 40vw;
+  margin-top: 60vh;
+  display: flex;
+  
+  justify-content: space-between;
+  width: 55vw;
+}
+ 
+.title{
+  background-color: black;
+  color: white;
+  width: 25vw;
+  height: 20vh;
+ position:fixed;
+  top:20%;
+  left: 5%;
+  text-align: center;
+  padding-top:50px;
+  
+}
+
+
+  
+  
+
+
+.English{
+width:25vw;
+
+left: 30%;
+top:50%
+
+}
+
+.Portuguese{
+font-style: italic;
+color:darkgrey;    
+width: 25vw;
+}

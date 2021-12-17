@@ -1,15 +1,21 @@
-.num1{
+.header{
+        padding: 1%;
     font-family: 'Courier New', Courier, monospace;
+    text-decoration: none;
     text-align: right;
-    margin-right: 5vw;
-
 }
+
+
+
+
 .major{
     font-family: 'Courier New', Courier, monospace;
     color: rgb(65, 65, 65);
-    text-align: center;
-    margin: 10 auto;
-    margin-top:30%;
+    text-align: left;
+    position: absolute;
+    bottom: 25%;
+    left: 10%;
+    
 }
 
 a{
@@ -25,6 +31,6 @@ font-size: 1.2em;
 
 a:hover{
     color:tomato;
-    font-size: 150%;
+   
     font-weight: bold;
 }
