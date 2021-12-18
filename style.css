@@ -13,7 +13,7 @@
     color: rgb(65, 65, 65);
     text-align: left;
     position: absolute;
-    bottom: 25%;
+    top: 60%;
     left: 10%;
     
 }
@@ -26,6 +26,7 @@ a{
 .links{
     padding-top: 1%;
 font-size: 1.2em;
+width: 65vw;
 }
 
 

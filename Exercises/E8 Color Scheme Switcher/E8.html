@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="header">
+        <p class="num2"><a href="../../landing page.html">HOME</a></p>
+        <p class="num1"> LC3597</p>
+    </div>        
+       
+    <div class="major">
+            <h1 id="text">Color Scheme Switcher</h1>
+                 
+            <ul id="switcher">
+                <li id="redButton" ></li>
+                <li id="greenButton"></li>
+                <li id="blueButton"></li>
+                <li id="whiteButton"></li>
+            </ul>
+
+    </div>
+</body>
+<script>
+let text = document.querySelector("h1");
+
+let redButton = document.getElementById("redButton");
+let greenButton = document.getElementById("greenButton");
+let blueButton = document.getElementById("blueButton");
+let whiteButton = document.getElementById("whiteButton");
+
+function redScheme() {
+  document.body.style.backgroundColor = "#e39d9d";
+  document.getElementById("text").style.color = "#4f0909";
+}
+function greenScheme() {
+  document.body.style.backgroundColor = "#c7d6c3";
+  document.getElementById("text").style.color = "#293026";
+}
+function blueScheme() {
+  document.body.style.backgroundColor = "#c2ddf2";
+  document.getElementById("text").style.color = "#0e1930";
+}
+function whiteScheme() {
+  document.body.style.backgroundColor = "white";
+  document.getElementById("text").style.color = "#414141";
+}
+
+redButton.addEventListener("click", redScheme);
+greenButton.addEventListener("click", greenScheme);
+blueButton.addEventListener("click", blueScheme);
+whiteButton.addEventListener("click", whiteScheme);
+
+</script>
+
+</html>
+
