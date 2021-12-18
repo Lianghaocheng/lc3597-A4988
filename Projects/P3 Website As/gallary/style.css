@@ -3,9 +3,7 @@
     margin: 0;
     padding: 0;
   }
-body{
-  background-color: rgb(189, 146, 140);
-}
+
 .header{
 display: flex;
 justify-content: space-between;
@@ -56,8 +54,8 @@ font-family: "Roboto", sans-serif;
  
 
      #largeImg{margin:0 auto;
-    position: relative;
-    top:10vh;
+    position: absolute;
+    top:15vh;
     text-align: center;
                  margin: 0;
         position: absolute;
@@ -69,7 +67,15 @@ font-family: "Roboto", sans-serif;
 
      }
 
+    .title{
+      
+      color: rgb(47,9,9);
+      position:absolute;
+      font-family: "Roboto", sans-serif;
     
+    left:43vw;
+    top:18vh;
+    }
 
      #thumbs{
          
@@ -78,7 +84,7 @@ font-family: "Roboto", sans-serif;
          justify-content: center;
         margin:20px;
         position: relative;
-        top:80vh; 
+        top:75vh; 
         list-style: none;
         
         
