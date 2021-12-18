@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+      <div class="navbar">
+        
+        <a href="index.html" class="nav">Home</a>
+        
+        <div id="introduction1" class="intro">
+            
+            <span id="intro1">Introduction</span>
+            <ul>
+              <li>Mural</li>
+              <li>Sculpture</li>
+              <li>Caligraphy</li>
+              <li>Architecture</li>
+            </ul>
+        
+          </div>
+          
+          <div id="introduction2" class="intro">
+            
+            <span class="intro2">Tickets & Vist</span>
+            <ul>
+              <li>Tickets</li>
+              <li>Address</li>
+              <li>Arrival Info</li>
+            </ul>
+        
+            <div id="introduction3" class="intro">
+            
+                <span class="intro3">About</span>
+                <ul>
+                  <li>Author</li>
+                  <li>Contacts</li>
+                </ul>
+            
+          </div>
+
+
+
+
+
+      </div>
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        let menuElem1 = document.getElementById('introduction1');
+        let titleElem1 = menuElem1.querySelector('#intro1');
+    
+        titleElem1.onclick = function() {
+          menuElem1.classList.toggle('open');
+        };
+
+        let menuElem2 = document.getElementById('introduction2');
+        let titleElem2 = menuElem2.querySelector('#intro2');
+    
+        titleElem2.onclick = function() {
+          menuElem2.classList.toggle('open');
+        };
+
+        let menuElem3 = document.getElementById('introduction3');
+        let titleElem3 = menuElem3.querySelector('#intro3');
+    
+        titleElem3.onclick = function() {
+          menuElem3.classList.toggle('open');
+        };
+        
+      </script>
+
+
+</body>
+</html>
